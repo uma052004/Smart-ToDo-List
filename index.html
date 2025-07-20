@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>To Do List - JavaScript Project</title>
+</head>
+<body>
+    <div class="progress-container">
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-completed" id="progressCompleted"></div>
+  </div>
+  <div class="progress-info">
+    <span id="percentCompleted">Completed: 0%</span>
+    <span id="percentPending">Pending: 100%</span>
+  </div>
+</div>
+  <div class="container">
+    <header>
+      <h1>📝 My To Do List</h1>
+      <button id="toggleDarkMode">🌙</button>
+    </header>
+
+    <div class="input-container">
+      <input type="text" id="inputBox" placeholder="Add a new to-do..." />
+      <select id="prioritySelect">
+        <option value="low">Low 🔵</option>
+        <option value="medium">Medium 🟡</option>
+        <option value="high">High 🔴</option>
+      </select>
+      <input type="text" id="tagsInput" placeholder="Tags (comma-separated)" />
+      <input type="button" value="Add" id="addBtn" />
+    </div>
+    
+
+    <ul class="todoList" id="todoList"></ul>
+    <h2 class="section-title">✅ Completed Tasks <span id="completedCount">(0)</span></h2>
+    <ul class="completedList" id="completedList"></ul>
+
+  </div>
+  <button id="testReminderBtn">🔊 Test Reminder</button>
+
+  <audio id="reminderSound" src="reminder.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
